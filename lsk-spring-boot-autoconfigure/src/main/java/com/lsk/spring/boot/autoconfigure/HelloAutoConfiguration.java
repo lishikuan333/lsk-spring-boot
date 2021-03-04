@@ -7,14 +7,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @Author: 李世宽
- * @Email: 18135757181@163.com
- * @Date: 2020/5/16 22:27
  */
 @ConditionalOnWebApplication
 @Configuration
 @EnableConfigurationProperties(HelloProperties.class)
-public class HelloAutoConfigration {
+public class HelloAutoConfiguration {
 
     @Autowired
     private HelloProperties helloProperties;
